@@ -4,7 +4,7 @@ use crate::ddns::DnsUpdate;
 use crate::ddns::{HuaWeiCloudDDNS, IPAddr};
 
 fn run<T: DnsUpdate>(dns: &mut T) -> () {
-    let update_res = dns.update_record("hezhaozhao.top.", Some("A"));
+    let update_res = dns.update_record("domain", Some("A"));
     println!("update_res is : {:?}", update_res);
 }
 fn main() {
